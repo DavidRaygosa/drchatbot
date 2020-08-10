@@ -74,7 +74,7 @@ var controller_chatbot =
 			}
 		});
 
-		ejs.renderFile('../backend/views/Email.ejs', { params }, function (err, data) 
+		ejs.renderFile('./views/Email.ejs', { params }, function (err, data) 
 		{
 			if (err) 
 			{
@@ -84,7 +84,7 @@ var controller_chatbot =
 			{
 				const mailOptions = 
 				{
-					from: 'ViweTec.com <${params.email}>',
+					from: 'DRChatBot <${params.email}>',
 					to: 'elmundo_loco@hotmail.com', // Cambia esta parte por el destinatario
 					subject: 'Mensaje de la Pagina Web',
 					html: data
