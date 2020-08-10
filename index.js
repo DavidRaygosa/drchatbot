@@ -5,7 +5,7 @@ var app = require('./app');
 var port = 3700;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/project', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
+mongoose.connect('mongodb+srv://davidr97:Azullindo55!@cluster0.k1pej.gcp.mongodb.net/DrChatbot?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
 		.then
 		(
 			() =>
