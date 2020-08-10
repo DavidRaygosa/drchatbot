@@ -91,7 +91,7 @@ var controller_chatbot =
 				};
 				transporter.sendMail(mailOptions, (err, info) =>
 				{
-					if(err) return res.status(200).send({message:'Error Al Enviar Correo'});
+					if(err) return res.status(500).send({message:'Error Al Enviar Correo'});
 					else return res.status(200).send({message:'Correo Enviado'});
 				});
 			}
