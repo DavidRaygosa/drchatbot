@@ -14,7 +14,7 @@ mongoose.connect('mongodb+srv://davidr97:Azullindo55!@cluster0.k1pej.gcp.mongodb
 					console.log("Conexion a la base de datos establecida satisfactoriamente...");
 					app.listen(app.get('port'), () => 
 					{
- 						console.log("Servidor Corriendo Correctamente En la URL: localhost:3700");
+ 						console.log("Servidor Corriendo Correctamente En Puerto: "+app.get('port'));
 					});
 				}
 		)
